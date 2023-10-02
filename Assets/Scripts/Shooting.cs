@@ -10,10 +10,10 @@ public class Shooting : MonoBehaviour
 
     private void Start()
     {
-       var shoot = StartCoroutine(ShootingWorker());
+       var shoot = StartCoroutine(Shoot());
     }
 
-    private IEnumerator ShootingWorker()
+    private IEnumerator Shoot()
     {
         bool isWork = true;
         WaitForSeconds waitForSeconds = new WaitForSeconds(_timeWaitShooting);
